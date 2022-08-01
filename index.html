@@ -57,32 +57,6 @@ integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="crossorigin="anon
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<script src="https://code.jquery.com/jquery-3.4.1.js"
          integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="crossorigin="anonymous"></script>
-		<script>
-		 $.ajax({
-			headers: {
-            'Access-Control-Allow-Credentials' : true,
-            'Access-Control-Allow-Origin':'*',
-            'Access-Control-Allow-Methods':'GET',
-            'Access-Control-Allow-Headers':'application/json',
-           },
-			//jsonp: "callback",
-            dataType: "jsonp",  	
-			//dataType: "json",
-			url:"https://www.einfit.tw/blogs/dietitian/?page=1",
-			method: "GET",
-			data:{
-				format: "json"
-			},
-			success:function(res){console.log(res)},
-			error:function(err){console.log(err)},
-		  });
-
-		  $("button").click(function(){
-            $.ajax({url:"demo_test.txt",success:function(result){
-              $("#div1").html(result);
-            }});
-          });
-		</script>
 	</head>
 	<body class="is-preload">
 
@@ -101,7 +75,7 @@ integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="crossorigin="anon
 								<li><a href="#">Ipsum</a></li>
 								<li><a href="#">Feugiat</a></li>
 								<li><a href="#">Tempus</a></li>
-								<li><a href="#">Adipiscing</a></li>
+								<li><a href='http://linkedin.com'>徵才</a></li>
 							</ul>
 						</nav>
 						<nav class="main">
