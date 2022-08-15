@@ -18,8 +18,20 @@
 	  var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
 	  g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
 	})();
-  </script>
-  <!-- End Matomo Code -->
+</script>
+<!-- End Matomo Code -->
+<script>
+    var db = firebase.firestore();
+    var ref = db.collection('comments-test').doc('single-1-0-0730');
+
+    ref.set({
+      name: 王先生,
+      commtet: "可見肥胖與慢性病確實是習習相關的影響，因此趁早在疾病發生前期就先注意到代謝症候群的狀況，更能及早預防及避免惡化至慢性病的情形，遠離死亡率！",
+      date: new Date().toISOString().split('T')[0]
+    }).then(() => {
+      console.log('set data successful');
+    });
+</script>
 <html>
 	<head>
 		<title>永續飲食 Sustainable Diet</title>
@@ -201,11 +213,60 @@
 						                    <p><a href="https://www.mohw.gov.tw/cp-16-70314-1.html">https://www.mohw.gov.tw/cp-16-70314-1.html</a></p>
 						                    
 						                    <p>-</p>
+
+
+											<!-- <p style="margin-bottom:5px;" class="icon solid fa-comment"> 2個留言 </p> -->
+									        <div>
+												<!--msg1-->
+									        	<!-- <div style="display:flex;align-items: center;margin-top: 5px;">
+									        		<div style="width: 20px;height: 20px;border-radius: 50%;background-color: pink;margin-right:5px;"></div>
+													<div class="bn b bo bp gi">Kimberly Hampton Nilsson</div>
+													<div style="font-size: 8px;margin-left: 15px;">2022-07-30</div>
+									        	</div>
+												
+									        	</div>
+									        	<div style="padding:2px 5px;border-bottom: 1px dashed gray;">
+													一個說8年台北超越新加坡的墨綠柯P有嗎,他根本不在乎黃珊珊選的上選不上,
+									        		再加上宋楚瑜報恩蔡總統(讓他參加國際會議及子弟兵當監察院副院長),只要拉黃打蔣,大家認為黃珊珊會嬴,使這三位比例4>3+3,那麼到最後民進黨躺平都選的上,這就是可悲的台北市民,讓討厭民進黨的80萬票輸給支持民進黨的45萬票,民進黨吃定台北人,台北人自以為理智,只會讓民進黨陳時中躺著唱歌都嬴,只有抗中(陳時中)保台(台北).萬事都平安,否則台北就珊珊了
+												</div> -->
+												<!--msg2-->
+												<!-- <div style="display:flex;align-items: center;margin-top: 5px;">
+									        		<div style="width: 20px;height: 20px;border-radius: 50%;background-color: pink;margin-right:5px;"></div>
+													<div class="bn b bo bp gi">週大發</div>
+													<div style="font-size: 8px;margin-left: 15px;">2022-07-30</div>
+									        	</div>
+												
+									        	</div>
+									        	<div style="padding:2px 5px;border-bottom: 1px dashed gray;">
+													一個說8年台北超越新加坡的墨綠柯P有嗎,他根本不在乎黃珊珊選的上選不上,
+									        		再加上宋楚瑜報恩蔡總統(讓他參加國際會議及子弟兵當監察院副院長),只要拉黃打蔣,大家認為黃珊珊會嬴,使這三位比例4>3+3,那麼到最後民進黨躺平都選的上,這就是可悲的台北市民,讓討厭民進黨的80萬票輸給支持民進黨的45萬票,民進黨吃定台北人,台北人自以為理智,只會讓民進黨陳時中躺著唱歌都嬴,只有抗中(陳時中)保台(台北).萬事都平安,否則台北就珊珊了
+												</div> -->
+											  
+												<!--我要留言-->
+												<div style="width: 100%;min-height:100px;box-shadow: rgb(0 0 0 / 12%) 0px 2px 8px;margin: 5px 0px;">
+													<div style="display:flex;align-items: center;">
+														<div style="width: 20px;height: 20px;border-radius: 50%;background-color: gray;margin:0px 5px;"></div>
+														<input style="border:none;background-color:white;outline: none;" placeholder="name" style="-webkit-appearance: none;" type="text" name="" id="">
+													</div>
+													<textarea style="width: 100%;resize:none;" name="textarea" rows="5" cols="10">我要留言</textarea>
+												</div>
+
+												
+									        </div>
+											<div style="margin-bottom: 30px;"></div>
+
+
+
+
+
+
+
 						                    
 						                    <p>🌵看更多營養小知識：<a href="https://www.instagram.com/dietitian_yuuu/">www.instagram.com/dietitian_yuuu/</a></p>
 						                    
 						                    <p>🌵問問題？找LINE@:&nbsp;<a href="https://page.line.me/einfit?fbclid=IwAR1XfeEv-chZsIR5dIT6k82VLUwj3hnZqzrl5de8kqdS8tl3Oq2jRrO6eHM">https://page.line.me/einfit</a></p>
 									</span>
+
 								  </div>
                 
 			

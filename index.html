@@ -15,9 +15,6 @@ integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="crossorigin="anon
 
   gtag('config', 'G-DKC9G17GKP');
 </script>
-<script>
-	var userid="haran.huang@gmail.com";
-</script>
 <!-- Google Tag Manager -->
 <!-- <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -66,6 +63,38 @@ integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="crossorigin="anon
     //});
    </script>
    <!-- End mixpanel Code -->
+
+   <!-- firebase -->
+   <script type="module">
+	// Import the functions you need from the SDKs you need
+	import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.2/firebase-app.js";
+	import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.9.2/firebase-analytics.js";
+	// TODO: Add SDKs for Firebase products that you want to use
+	// https://firebase.google.com/docs/web/setup#available-libraries
+  
+	// Your web app's Firebase configuration
+	// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+	const firebaseConfig = {
+	  apiKey: "AIzaSyB6OTAKZNWDt64bQ5Z0r8PGrwHUyaXNay8",
+	  authDomain: "blog-a4457.firebaseapp.com",
+	  projectId: "blog-a4457",
+	  storageBucket: "blog-a4457.appspot.com",
+	  messagingSenderId: "67740018265",
+	  appId: "1:67740018265:web:76933f07b86152955ef348",
+	  measurementId: "G-JLPK81V7M8"
+	};
+  
+	// Initialize Firebase
+	const app = initializeApp(firebaseConfig);
+	const analytics = getAnalytics(app);
+
+	firebase.initializeApp({
+      projectId: 'blog-a4457'
+    });
+    var db = firebase.firestore();
+	
+  </script>
+  <!-- End firebase -->
 <html>
 	<head>
 		<title>雨辰營養師怎麼說</title>
@@ -566,7 +595,10 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 						<!-- Intro -->
 							<section id="intro">
-								<a href="#" class="logo"><img src="images/profile.jpeg" alt="" /></a>
+								<div style="display:flex;justify-content: center;align-items: center;">
+									<a href="#" class="logo"><img src="images/profile.jpeg" alt="" /></a>
+									<a style="text-decoration: none;margin-left: 10px;border-bottom: 0px;" href="https://www.einfit.tw/"><img style="width: 150px;" src="https://cdn1.cybassets.com/media/W1siZiIsIjE2OTMxL2F0dGFjaGVkX3Bob3Rvcy8xNjUyMjg0MjE3X-WwjuimveWIly5qcGcuanBlZyJdXQ.jpeg?sha=28f5ef24f1fee6d0" alt="" /></a>
+								</div>
 								<header>
 									<h2>雨辰營養師怎麼說</h2>
 								</header>
