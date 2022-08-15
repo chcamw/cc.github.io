@@ -50,22 +50,20 @@
 	firebase.initializeApp({
       projectId: 'blog-a4457'
     });
-    var db = firebase.firestore();
 	
-  </script>
-  <!-- End firebase -->
-<script>
     var db = firebase.firestore();
-    var ref = db.collection('comments-test').doc('single-1-0-0730');
+	var ref = db.collection('comments-test').doc('single-1-0-0730');
 
     ref.set({
       name: 王先生,
       commtet: "可見肥胖與慢性病確實是習習相關的影響，因此趁早在疾病發生前期就先注意到代謝症候群的狀況，更能及早預防及避免惡化至慢性病的情形，遠離死亡率！",
       date: new Date().toISOString().split('T')[0]
     }).then(() => {
-      console.log('set data successful');
-    });
-</script>
+  console.log('set data successful');
+});
+	
+  </script>
+  <!-- End firebase -->
 <html>
 	<head>
 		<title>永續飲食 Sustainable Diet</title>
